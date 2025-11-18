@@ -1,0 +1,28 @@
+# Core dependencies
+torch>=2.0.0
+torchaudio>=2.0.0
+numpy>=1.21.0
+
+# Training and optimization
+accelerate>=0.20.0
+tensorboard>=2.10.0
+tqdm>=4.64.0
+
+# Text processing and tokenization
+tokenizers>=0.13.0
+pypinyin>=0.48.0
+cutlet>=0.2.0
+hangul-romanize>=0.1.0
+
+# Audio processing
+pydub>=0.25.0
+torch-pitch-shift>=1.0.0
+
+# Configuration and utilities
+omegaconf>=2.2.0
+einops>=0.6.0
+
+# Optional but recommended
+scipy>=1.9.0
+librosa>=0.10.0
+
