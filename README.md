@@ -74,7 +74,7 @@ audio = tts.synthesize(
 
 ```
 
-## 📚 Documentation
+## Documentation
 
 ### API Reference
 
