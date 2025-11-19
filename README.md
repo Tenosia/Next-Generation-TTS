@@ -1,14 +1,10 @@
 # DetailTTS: Learning Residual Detail Information for Zero-shot Text-to-speech
 
-![image](img/overview.png)
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adelacvg/ttts/blob/v4/demo.ipynb)
-
-## 📖 Overview
+## Overview
 
 DetailTTS is a zero-shot text-to-speech synthesis system that learns residual detail information to improve audio reconstruction quality. Unlike traditional VQ (Vector Quantization) based methods that struggle with audio reconstruction, DetailTTS models residual details through learnable embeddings and duration modeling, achieving superior results.
 
-## ✨ Features
+## Features
 
 - **Zero-shot TTS**: Generate speech in any voice using just a reference audio
 - **Multi-language Support**: Chinese (ZH), Japanese (JP), English (EN), and Korean (KR)
@@ -16,7 +12,7 @@ DetailTTS is a zero-shot text-to-speech synthesis system that learns residual de
 - **Easy to Use**: Simple Python API for inference
 - **Extensible**: Easy to add support for new languages
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -76,13 +72,6 @@ audio = tts.synthesize(
     output_path='gen_jp.wav'
 )
 
-# Korean
-audio = tts.synthesize(
-    text="안녕하세요, 여러분",
-    reference_audio='reference.wav',
-    lang='KR',
-    output_path='gen_kr.wav'
-)
 ```
 
 ## 📚 Documentation
@@ -115,7 +104,7 @@ Synthesize speech from text using a reference audio.
 **Returns:**
 - `torch.Tensor`: Generated audio waveform
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 ttts/
@@ -141,7 +130,7 @@ ttts/
 └── utils/                 # Utility functions
 ```
 
-## 🎓 Training
+## Training
 
 ### 1. Tokenizer Training
 
@@ -177,7 +166,7 @@ To fine-tune on your own dataset:
 2. Prepare your dataset following the preprocessing steps
 3. Run the training script
 
-## 🌍 Multi-language Support
+## Multi-language Support
 
 DetailTTS currently supports:
 - **Chinese (ZH)**: Uses Pinyin for pronunciation
@@ -198,7 +187,7 @@ To add support for a new language:
 
 For languages that require pronunciation information (like Chinese and Japanese), ensure your text preprocessing includes phonetic information.
 
-## 📊 Demo
+## Demo
 
 Try the interactive demo:
 - [👉 **Visit the Demo Page**](https://detailtts.github.io/)
@@ -226,7 +215,7 @@ Edit `ttts/vqvae/config_v3.json` to adjust model parameters:
 }
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -248,7 +237,7 @@ Edit `ttts/vqvae/config_v3.json` to adjust model parameters:
    - Check that sample rate matches (32kHz)
    - Verify text preprocessing is correct for the language
 
-## 📝 Citation
+## Citation
 
 If you use DetailTTS in your research, please cite:
 
@@ -261,21 +250,21 @@ If you use DetailTTS in your research, please cite:
 }
 ```
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - [Tortoise](https://github.com/neonbjb/tortoise-tts) - Initial inspiration and codebase
 - [VITS](https://github.com/jaywalnut310/vits) - Core architecture foundation
 - [Bert-VITS2](https://github.com/fishaudio/Bert-VITS2) - Optimized code contributions (e.g., MAS implementation)
 
-## 📄 License
+## License
 
 See [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📧 Contact
+## Contact
 
 For questions and issues, please open an issue on GitHub.
 
